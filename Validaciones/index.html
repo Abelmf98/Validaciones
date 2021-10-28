@@ -21,7 +21,7 @@
         <label for="iNombre">Nombre</label>
       </div>
       <div class="col-75">
-        <input type="text" id="iNombre" placeholder="Nombre ...">
+        <input type="text" id="iNombre" onblur="prueba()" placeholder="Nombre ...">
       </div>
     </div>
     <div class="row">
@@ -29,7 +29,7 @@
         <label for="iApellidos">Apellidos</label>
       </div>
       <div class="col-75">
-        <input type="text" id="iApellidos" placeholder="Apellidos...">
+        <input type="text" id="iApellidos" onblur="apellidos()" placeholder="Apellidos...">
       </div>
     </div>
     <div class="row">
@@ -37,7 +37,7 @@
         <label for="iEdad">Edad</label>
       </div>
       <div class="col-75">
-        <input type="number" min="0" id="iEdad" placeholder="¿Cuanto años tienes?">
+        <input type="number" min="18" id="iEdad" placeholder="¿Cuanto años tienes?">
       </div>
     </div>
     <div class="row">
@@ -45,7 +45,7 @@
         <label for="iEmail">Email</label>
       </div>
       <div class="col-75">
-        <input type="text" id="iEmail" placeholder="Correo eléctrico...">
+        <input type="text" id="iEmail" pattern=".+@correo.com" placeholder="Correo eléctrico...">
       </div>
     </div>
     <div class="row">
@@ -53,7 +53,7 @@
         <label for="iNIF">NIF</label>
       </div>
       <div class="col-75">
-        <input type="text" id="iNIF" pattern= '\d{8}[A-Za-z]'placeholder="NIF...">
+        <input type="text" id="iNIF" onblur="dni()" placeholder="NIF...">
       </div>
     </div>
     <div class="row">
@@ -61,7 +61,7 @@
         <label for="iTelefono">Teléfono</label>
       </div>
       <div class="col-75">
-        <input type="text" id="iTelefono" placeholder="Teléfono... mi caaasa...">
+        <input type="text" id="iTelefono" onblur="telefono()" placeholder="Teléfono... mi caaasa...">
       </div>
     </div>
     <div class="row">
@@ -69,7 +69,7 @@
         <label for="sComunidad">Comunidad Autónoma</label>
       </div>
       <div class="col-75">
-        <select id="sComunidad">
+        <select id="sComunidad" onblur="asturiano()">
           <option value=1>Andalucía</option>
           <option value=2>Aragón</option>
           <option value=3>Asturias</option>
